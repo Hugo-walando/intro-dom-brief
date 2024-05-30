@@ -35,16 +35,18 @@ player2Btn.addEventListener('click', (e) => {
   }
 });
 
-inputScore.addEventListener('keyup', () => {
-  let inputValue = Number(inputScore.value);
-  if (!isNaN(inputValue) && inputValue > 0) {
-    maxScore = inputValue;
-  }
-  player1Score = 0;
-  player2Score = 0;
-  player1Display.innerText = player1Score;
-  player2Display.innerText = player2Score;
-  maxscoreDisplay.innerText = `Score pour gagner : ${maxScore}`;
+['keyup', 'change'].forEach((evt) => {
+  inputScore.addEventListener(evt, () => {
+    let inputValue = Number(inputScore.value);
+    if (!isNaN(inputValue) && inputValue > 0) {
+      maxScore = inputValue;
+    }
+    player1Score = 0;
+    player2Score = 0;
+    player1Display.innerText = player1Score;
+    player2Display.innerText = player2Score;
+    maxscoreDisplay.innerText = `Score pour gagner : ${maxScore}`;
+  });
 });
 
 resetBtn.addEventListener('click', (e) => {
