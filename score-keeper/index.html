@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Score Keeper</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
+                crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="text-center mt-12"> <a
+               class="mx-2 p-3 rounded-md text-white bg-red-500"
+               href="../index.html"><i class="fa-solid fa-arrow-left"></i>
+                Back</a></nav>
+        <div
+             class="w-6/12 mx-auto h-[550px] shadow-md mt-12 rounded-lg text-center">
+            <div class="flex">
+                <div class="w-full ">
+                    <h1 class="text-9xl font-bold h-80 bg-red-500 flex justify-center items-center text-white"
+                        id="player-1"></h1>
+                    <button class="w-full bg-red-600 p-3 text-white font-bold text-xl"
+                            id="player-1-btn">+1</button>
+                </div>
+                <div class="w-full ">
+                    <h1 class="text-9xl font-bold h-80 bg-blue-500 flex justify-center items-center text-white"
+                        id="player-2"></h1>
+                    <button class="w-full bg-blue-600 p-3 text-white font-bold text-xl"
+                            id="player-2-btn">+1</button>
+                </div>
+            </div>
+            <h4 class="mt-3" id="maxscore">Score pour gagner : 5</h4>
+            <div>
+                <input class="border p-3 rounded-md w-6/12 mt-2"
+                       placeholder="Entrez le score pour gagner" id="score"
+                       type="number">
+            </div>
+            <button class="mx-2 py-3 px-5 mt-3 rounded-md text-white bg-blue-500"
+                    id="reset-btn">Reset</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
