@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Grocery List</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
                 crossorigin="anonymous"></script>
@@ -14,12 +14,15 @@
                href="../index.html"><i class="fa-solid fa-arrow-left"></i>
                 Back</a></nav>
         <div class="w-6/12 mx-auto mt-12">
-            <div>
-                <input class="p-3 border" placeholder="Acheter des bananes ..."
+            <div class="w-full flex">
+                <input class="p-3 border w-full rounded-md" id="input-field"
+                       placeholder="Acheter des bananes ..." maxlength="72"
                        type="text">
-                <button></button>
+                <button class="p-3 rounded-md text-white bg-blue-500"
+                        id="add-btn">Ajouter</button>
             </div>
-            <div class="w-full border rounded-md p-12"></div>
+            <div class="w-full border rounded-md p-12 mt-20" id="items-list">
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
