@@ -21,7 +21,6 @@ const disableButtons = (winnerDisplay) => {
 player1Btn.addEventListener('click', (e) => {
   player1Score++;
   player1Display.innerText = player1Score;
-  console.log(maxScore);
   if (maxScore === Number(player1Score)) {
     disableButtons(player1Display);
   }
@@ -50,7 +49,6 @@ player2Btn.addEventListener('click', (e) => {
 });
 
 resetBtn.addEventListener('click', (e) => {
-  console.log(player1Score);
   player1Score = 0;
   player2Score = 0;
   player1Display.innerText = player1Score;
