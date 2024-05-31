@@ -14,13 +14,13 @@
                href="../index.html"><i class="fa-solid fa-arrow-left"></i>
                 Back</a></nav>
         <div class="w-6/12 mx-auto mt-12">
-            <div class="w-full flex">
+            <form class="w-full flex" onsubmit="event.preventDefault();">
                 <input class="p-3 border w-full rounded-md" id="input-field"
                        placeholder="Acheter des bananes ..." maxlength="72"
                        type="text">
                 <button class="p-3 rounded-md text-white bg-blue-500"
-                        id="add-btn">Ajouter</button>
-            </div>
+                        id="add-btn" type="submit">Ajouter</button>
+            </form>
             <div class="w-full border rounded-md p-12 mt-20" id="items-list">
             </div>
         </div>
