@@ -1,6 +1,6 @@
 const addBtn = document.querySelector('#add-btn');
 const list = document.querySelector('#items-list');
-inputField = document.querySelector('#input-field');
+const inputField = document.querySelector('#input-field');
 
 addBtn.addEventListener('click', (e) => {
   let inputValue = inputField.value;
